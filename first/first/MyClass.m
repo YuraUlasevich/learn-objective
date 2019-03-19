@@ -14,8 +14,8 @@
 - (id) initWithAge:(int)age andName:(NSString *)name{
     self = [super init];
     if(self){
-        self.name = name;
-        self.age = age;
+        _name = name;
+        _age = age;
     }
     return self;
 }
@@ -26,17 +26,17 @@
 
 - (int) getBirthYear{
     int currentYear = 2019;
-    return currentYear - self.age;
+    return currentYear - _age;
 }
 
 -(int) retrieveAge{
     agesCount = agesCount + 1;
     NSLog(@"%i", agesCount);
-    return self.age;
+    return _age;
 }
 -(void) givenNewName:(NSString *)name{
-    oldName = self.name;
-    self.name = name;
+    oldName = _name;
+    _name = name;
 }
 
 + (instancetype) personWithName:(NSString *)name andAge:(int)age{
