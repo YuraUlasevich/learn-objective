@@ -12,6 +12,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MyClass : NSObject
 
+@property (assign) int age;
+@property (nonatomic, strong) NSString * name;
+
+- (id) initWithAge:(int)age andName:(NSString*)name;
+- (void) printName;
+- (int) getBirthYear;
+
++ (NSString *) printNames;
++ (instancetype) personWithName:(NSString *)name andAge:(int)age;
+
 @end
 
 NS_ASSUME_NONNULL_END
