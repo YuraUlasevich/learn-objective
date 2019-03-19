@@ -7,13 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "MyClass.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSString * str = @"Hello";
-        // insert code here...
-        NSLog(@"Hello, World!");
-        
+        MyClass *yura = [MyClass alloc];
+        NSString *yuraName = @"Yura";
+        yura = [yura initWithAge:21 andName:yuraName];
+        [yura printName];
+        NSLog(@"%d", [yura getBirthYear]);
+        NSLog(@"%@", [MyClass speciesName]);
     }
     return 0;
 }

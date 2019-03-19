@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) printName;
 - (int) getBirthYear;
 
-+ (NSString *) printNames;
++ (NSString *) speciesName;
 + (instancetype) personWithName:(NSString *)name andAge:(int)age;
 
 @end
