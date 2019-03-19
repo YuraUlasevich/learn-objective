@@ -1,13 +1,13 @@
 //
-//  MyClass.m
+//  Header.h
 //  first
 //
 //  Created by Юра Уласевич on 3/19/19.
 //  Copyright © 2019 Юра Уласевич. All rights reserved.
 //
 
-#import "MyClass.h"
+#ifndef Header_h
+#define Header_h
 
-@implementation MyClass
 
-@end
+#endif /* Header_h */

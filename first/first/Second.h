@@ -1,13 +1,17 @@
 //
-//  MyClass.m
+//  Second.h
 //  first
 //
 //  Created by Юра Уласевич on 3/19/19.
 //  Copyright © 2019 Юра Уласевич. All rights reserved.
 //
 
-#import "MyClass.h"
+#import <Foundation/Foundation.h>
 
-@implementation MyClass
+NS_ASSUME_NONNULL_BEGIN
+
+@interface Second : NSObject
 
 @end
+
+NS_ASSUME_NONNULL_END
