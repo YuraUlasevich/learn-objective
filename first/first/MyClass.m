@@ -8,6 +8,7 @@
 
 #import "MyClass.h"
 
+
 @implementation MyClass
 
 - (id) initWithAge:(int)age andName:(NSString *)name{
@@ -26,6 +27,16 @@
 - (int) getBirthYear{
     int currentYear = 2019;
     return currentYear - self.age;
+}
+
+-(int) retrieveAge{
+    agesCount = agesCount + 1;
+    NSLog(@"%i", agesCount);
+    return self.age;
+}
+-(void) givenNewName:(NSString *)name{
+    oldName = self.name;
+    self.name = name;
 }
 
 + (instancetype) personWithName:(NSString *)name andAge:(int)age{

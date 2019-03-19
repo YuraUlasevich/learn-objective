@@ -16,6 +16,9 @@ int main(int argc, const char * argv[]) {
         [yura printName];
         NSLog(@"%d", [yura getBirthYear]);
         NSLog(@"%@", [MyClass speciesName]);
+        int requestAge = yura.name;
+        int anotherRequestAge = [yura retrieveAge];
+        [yura givenNewName:@"Vlad"];
     }
     return 0;
 }

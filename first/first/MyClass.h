@@ -10,10 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MyClass : NSObject
+@interface MyClass : NSObject{
+    int agesCount;
+    NSString * oldName;
+}
 
-@property (assign) int age;
-@property (nonatomic, strong) NSString * name;
+@property (nonatomic,assign, getter=retrieveAge) int age;
+@property (nonatomic, strong, setter = givenNewName:) NSString * name;
 
 - (id) initWithAge:(int)age andName:(NSString*)name;
 - (void) printName;
