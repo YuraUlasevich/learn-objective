@@ -8,6 +8,10 @@
 
 #import "MyClass.h"
 
+@interface  MyClass ()
+@property (readonly) int heightInCentimeters;
+@property (readonly) int weight;
+@end
 
 @implementation MyClass
 
@@ -21,7 +25,7 @@
 }
 
 - (void) printName{
-    NSLog(@"%@", self.name);
+    NSLog(@"%@", _name);
 }
 
 - (int) getBirthYear{
@@ -49,6 +53,13 @@
     return species;
 }
 
+- (void) asignValues:(int)heightInCentimeters andWeight:(int)weight{
+    _heightInCentimeters = heightInCentimeters;
+    _weight = weight;
+}
 
-
+- (float) calculateBMI{
+    float BMI = (_weight / (_heightInCentimeters * _heightInCentimeters));
+    return BMI;
+}
 @end

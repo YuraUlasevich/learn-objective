@@ -13,12 +13,16 @@ int main(int argc, const char * argv[]) {
         MyClass *yura = [MyClass alloc];
         NSString *yuraName = @"Yura";
         yura = [yura initWithAge:21 andName:yuraName];
-        [yura printName];
-        NSLog(@"%d", [yura getBirthYear]);
-        NSLog(@"%@", [MyClass speciesName]);
+        
         int requestAge = yura.age;
         int anotherRequestAge = [yura retrieveAge];
         [yura givenNewName:@"Vlad"];
+        [yura givenNewName:@"Yura"];
+        [yura asignValues:170 andWeight:70];
+        float BMI = [yura calculateBMI];
+        int count = yura->agesCount;
+        NSString * oldName = yura->oldName;
+        NSLog(@"BMI: %f, AccessCount: %i, Old name: %@", BMI, count,oldName);
     }
     return 0;
 }
